@@ -1,0 +1,9 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:ka3k912719@bankingcluster.ayhvgpk.mongodb.net/${spring.application.database}?retryWrites=true&w=majority&appName=bankingCluster
