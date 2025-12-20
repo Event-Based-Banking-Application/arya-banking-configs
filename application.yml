@@ -11,7 +11,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb+srv://admin:ka3k912719@bankingcluster.ayhvgpk.mongodb.net/${spring.application.database}?retryWrites=true&w=majority&appName=bankingCluster
+      uri: mongodb+srv://admin:${mongo-password}@bankingcluster.ayhvgpk.mongodb.net/${spring.application.database}?retryWrites=true&w=majority&appName=bankingCluster
 
 app:
   config:
