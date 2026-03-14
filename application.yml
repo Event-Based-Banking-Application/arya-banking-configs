@@ -17,6 +17,6 @@ app:
   config:
     keycloak:
       url: http://localhost:5433
-      realm: event-based-banking-service
+      realm: event-based-banking-application
       token-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/token
       jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
