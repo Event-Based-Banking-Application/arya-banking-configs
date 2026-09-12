@@ -17,7 +17,7 @@ spring:
       sasl:
         mechanism: PLAIN
         jaas:
-          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='VN3FDFHBEK7JT2K6' password='cfltzg7BC9EjR8uqwm5Jgb+4vNBwMT3gORyn8b4Eab6xg8acb51U9EWEa846n9Mg';
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='${confluent.kafka.api.key}' password='${confluent.kafka.api.secret}';
       security:
         protocol: SASL_SSL
       session:
