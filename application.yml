@@ -28,7 +28,7 @@ spring:
           credentials:
             source: USER_INFO
           user:
-            info: ${confluent.kafka.api.key}:${confluent.kafka.api.secret}
+            info: ${confluent.kafka.schema.key}:${confluent.kafka.schema.secret}
 
   data:
     mongodb:
