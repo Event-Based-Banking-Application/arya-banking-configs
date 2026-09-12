@@ -23,6 +23,12 @@ spring:
       session:
         timeout:
           ms: 45000
+      basic:
+        auth:
+          credentials:
+            source: USER_INFO
+          user:
+            info: ${confluent.kafka.api.key}:${confluent.kafka.api.secret}
 
   data:
     mongodb:
