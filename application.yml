@@ -13,6 +13,7 @@ spring:
   kafka:
     bootstrap-servers: pkc-41p56.asia-south1.gcp.confluent.cloud:9092
     properties:
+      schema.registry.url: https://psrc-81q7m7.asia-south1.gcp.confluent.cloud
       sasl:
         mechanism: PLAIN
         jaas:
