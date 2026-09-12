@@ -6,11 +6,22 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+client:
+  id: ccloud-springboot-client-311f578c-748a-4f31-8f1d-295ca7dd1828
+
 spring:
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: pkc-41p56.asia-south1.gcp.confluent.cloud:9092
     properties:
-      schema.registry.url: http://localhost:8081
+      sasl:
+        mechanism: PLAIN
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username='VN3FDFHBEK7JT2K6' password='cfltzg7BC9EjR8uqwm5Jgb+4vNBwMT3gORyn8b4Eab6xg8acb51U9EWEa846n9Mg';
+      security:
+        protocol: SASL_SSL
+      session:
+        timeout:
+          ms: 45000
 
   data:
     mongodb:
